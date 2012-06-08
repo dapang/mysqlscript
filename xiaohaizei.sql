@@ -1,4 +1,4 @@
-#查询是否用重复帐号
+#查询是否用重复帐号 
 select count(role_id),passport from `mem_role` group by passport having count(role_id)>1;
 
 #创建临时表保存重复帐号 role_id
